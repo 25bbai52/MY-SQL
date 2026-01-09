@@ -1,0 +1,39 @@
+create database anna;
+use anna; 
+create table employ(
+emp_id varchar(30),
+emp_name varchar(40),
+emp_designation varchar (40),
+emp_age int);
+select* from employ;
+
+insert into employ
+(emp_id,emp_name,emp_designation,emp_age)
+values(
+1,'a','hr',26),
+(2,'b','ds',34),
+(3,'c','da',37),
+(4,'d','di',40),
+('e5','t','de',45),
+(6,'y','du',47),
+(7,'z','dr',49),
+(8,'r','ri',50),
+(9,'i','ru',56),
+(10,'z','bi',24);
+select* from employ;
+
+update employ set emp_name='sr',emp_age=44
+where emp_id=1;
+
+update employ set emp_designation='ds'
+where emp_id=2;
+select* from employ;
+
+delete from employ where emp_id='e5';
+select* from employ;
+
+delete from employ where emp_age=56;
+select* from employ;
+
+alter table employ add emp_dept varchar(30),
+add emp_location varchar(30);
