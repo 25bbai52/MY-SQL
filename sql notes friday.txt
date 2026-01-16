@@ -1,0 +1,25 @@
+16-01-26
+
+create database aliza;
+use aliza;
+select* from ammu;
+
+  to check how many unique processor_brand is there
+  select distinct (brand_name) from ammu;
+  
+  --how many unique model is there
+  select* from ammu;
+  select count(distinct(model)) from ammu;
+  select count(distinct(brand_name)) from ammu;
+
+--update mediatek where the processor_brand is dimensity 
+update ammu set processor_brand="mediatek" where processor_brand="dimensity"
+
+--find out the data where the price is greater than 200000
+select* from ammu;
+select* from ammu where price > 200000;
+
+--Q-> find out maximum price
+select* from ammu;
+select max(price) from ammu;
+
